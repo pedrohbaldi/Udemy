@@ -1,0 +1,192 @@
+/* 4 - EXTERNAL  */
+body{
+    padding-bottom: 500px;
+}
+h3 {
+    color: red;
+}
+/* 5- Ordem do css. O Inline, como descrito no comentário linha 29, também se sobressai sobre uma ordem 
+do external de um código. */
+/* Also: A TAG do external possui mais influência que a TAG Internal, ou seja, o parágrafo, caso não tivesse a 
+presença da tag inline, linha 32 (style="color: red") O texto ficaria Marrom, se destacando sobre a ordem linha 10*/
+
+/* A ordem também é vista em ordem de leitura, ou seja, se colocássemos a linha 14 (código esse que chama para esta
+pagina .CSS)  em cima da linha 8, o texto se tornaria dourado, pois a leitura acabaria com a ordem do código linha 10*/
+
+
+/* 8- Classes  */
+.paragraph {
+    background-color: black;
+    color: aqua;
+    padding: 5px;
+}
+/* 8- ID's */
+#exclusive-title {
+    background-color: grey;
+    color:  red;
+    padding: 10 px
+}
+
+/* 10- Ordem das regras */
+h2 {
+    border-bottom: 2px solid red;
+}
+.título {
+    border-bottom:3px solid blue;
+}
+#algum-título{
+    border-bottom: 4px solid green;
+}
+
+/* 11- Nome de cores */
+.color-name{
+    color: slateblue
+}
+/* 12- HEX */
+.hex {
+    color: #55a398  
+}
+.hex-2 {
+    color: #570857
+}
+/* 13- Aprofundando em HEX */
+.simple-hex{
+    color: #333;
+}
+.simple-hex2{
+    color: #A5F
+}
+/* 14- RGB */
+.RGB{
+    color: rgb(110, 32, 255);
+}
+.mixed-rgb{
+    color: rgb(199, 21 ,47 );
+}
+/* 15- RGBA */
+.rgba{
+    color: rgb(255, 166, 45, 0.3);
+}
+.hsl{
+    color: hsl(100, 50%, 25%);
+}
+.hsl2{
+    color: hsl(0, 38%, 65%)
+}
+/* 17- Background-color */
+.bg{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255)
+}
+.bg-2{
+    background-color: #A5F;
+    color: yellow
+}
+/* 18- Background Opacity  */
+.Opacity-bg{
+    background-color: green;
+    opacity: 0.2;
+}
+.Opacity-bg2{
+    background-color: grey;
+    color:black;
+    opacity: 0.8;
+}
+/* 19- Rgba com opacidade */
+.Rgba-op{
+    background-color: rgba(90, 120, 20, 0.2);
+    color:#000;
+}
+/* 20- Inserir imagens no background  */
+.bg-image{
+    background-image: url(../CSS/img/campo_de_girassois.jpg);
+    padding: 10px;
+    color: #fff
+}
+/* Centralizando BG-img */
+.Nao_centralizado-bg, 
+.Centralizado {
+    height: 400px;
+    width: 400px;
+    background-image: url(../CSS/img/lírio_aranha.jpg);
+}
+
+.Centralizado {
+    background-position: center;
+    background-size: cover;
+}
+/* 22- largura e altura */
+.height-width{
+    height: 200px;
+    width: 100px;
+    background-color: red ;
+}
+/* O problema de não possuir um width: */
+.height-width-2{
+    height: 200px;
+    background-color: orange
+}
+
+/* 23- Padding */
+.without-padding,
+.with-padding{
+    background-color: #111;
+    color: #FFF
+}
+.with-padding{
+    padding: 20px;
+}
+/* 24- Padding Individual */
+.Padding-Individual{
+    background-color: #222;
+    color: #FFF;
+    padding-top: 90px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 90px;
+}
+/* 25- ShortHandPadding */
+/* Uma maneira mais resumida de fazer um padding individual */
+.Short-Hand-Padding{
+    background-color: #444;
+    padding: 6px 12px 18px 24px;
+}
+.Short-Hand-Padding-2{
+    background-color: #A5EF;
+    padding: 40px 60px; 
+}
+/* 26- Padding com Width */
+.without-border-box{
+    background-color: #55a398;
+    color: #FFF;
+    width: 400px;
+    padding: 50px;
+}
+/* Teve seu tamanho menor por causa da Border Box */
+.border-box{
+    background-color: #2a8d11;
+    color: #FFF;
+    width: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+/* 27- Bordas */
+.borda{
+    border: 5px solid red;
+    padding: 10px;
+
+}
+.borda-2{
+    border: 2px dotted #55a398;
+    padding: 20px;
+}
+/* 28- Direções da ordem Border */
+ .Bordas-Individuais{
+    border-bottom:5px solid #1d0dfc;
+    border-top:10px solid #000000;
+    padding: 25px;
+ }
+ .Bordas-Individuais-2{
+    border-left: 20px dotted #2a8d11;
+    border-right: 5px solid #ff0303;
+ }
